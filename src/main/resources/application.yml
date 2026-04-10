@@ -1,0 +1,30 @@
+# JWT Configuration
+jwt:
+  secret: defaultSecretKeyForDevelopmentOnlyNotForProduction12345678901234567890
+  expiration: 86400000
+
+# Application
+spring.application.name=Uroutes
+
+# Server
+server.port=8080
+
+# Database
+spring.datasource.url=jdbc:postgresql://localhost:5432/trailsspain
+spring.datasource.username=postgres
+spring.datasource.password=postgres
+spring.datasource.driver-class-name=org.postgresql.Driver
+
+# JPA/Hibernate
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+
+# Jackson
+spring.jackson.serialization.write-dates-as-timestamps=false
+spring.jackson.time-zone=Europe/Madrid
+
+# Logging
+logging.level.com.trailsspain=DEBUG
+logging.level.org.springframework.security=DEBUG
